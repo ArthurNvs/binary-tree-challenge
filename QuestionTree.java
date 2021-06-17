@@ -1,10 +1,8 @@
 import java.util.*; 
-import java.io.*;
 
 public class QuestionTree {
 
    private QuestionNode rootOfTree;
-  
    private Scanner console; 
 
    public QuestionTree() {
@@ -28,25 +26,6 @@ public class QuestionTree {
          root.noNode = readHelper(input);   
       }
       return root; 
-   }
-   
-   public void write(PrintStream output) {
-      if (output == null) {
-         throw new IllegalArgumentException(); 
-      }
-      writeTree(rootOfTree, output);
-   }
-
-   private void writeTree(QuestionNode rootOfTree, PrintStream output) {
-      if (isAnswerNode(rootOfTree)) {
-         output.println("A:"); 
-         output.println(rootOfTree.data);
-      } else {
-         output.println("Q:");
-         output.println(rootOfTree.data);
-         writeTree(rootOfTree.yesNode, output);
-         writeTree(rootOfTree.noNode, output); 
-      }   
    }
    
    public void askQuestions() {

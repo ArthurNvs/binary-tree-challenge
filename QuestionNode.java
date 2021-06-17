@@ -2,7 +2,6 @@ public class QuestionNode {
    
    public String data;
    public QuestionNode yesNode;
-   
    public QuestionNode noNode;
 
    public QuestionNode() {}

@@ -1,4 +1,3 @@
-
 public class GourmetGame {
     public static void main(String[] args) {
         QuestionTree questions = new QuestionTree();
