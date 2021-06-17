@@ -1,4 +1,3 @@
-import java.io.*;
 
 public class GourmetGame {
     public static void main(String[] args) {
