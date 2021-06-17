@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class GourmetGame {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         QuestionTree questions = new QuestionTree();
 
         while(true) {
