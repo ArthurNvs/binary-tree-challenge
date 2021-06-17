@@ -2,6 +2,8 @@
 
 #1 - Clone or download this repo!
 
-#2 - Execute the app by running GourmetGame.java!
+#2 - Open the project 
 
-#3 - Enjoy!
+#3 - Execute the app by running GourmetGame.java!
+
+#4 - Enjoy!
