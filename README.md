@@ -9,5 +9,5 @@
 #4 - Enjoy!
 
 <a href="#">
-    <img align="center" width="600" height="400" src="game.gif">
+    <img align="center" width="100%" height="100%" src="game.gif">
 </a>
