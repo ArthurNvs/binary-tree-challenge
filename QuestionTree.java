@@ -17,14 +17,9 @@ public class QuestionTree {
    }
 
    private QuestionNode readHelper(Scanner input) {
-      String type = input.nextLine();
       String data = input.nextLine();
       QuestionNode root = new QuestionNode(data);  
   
-      if (type.contains("Q:")) {
-         root.yesNode = readHelper(input);
-         root.noNode = readHelper(input);   
-      }
       return root; 
    }
    
