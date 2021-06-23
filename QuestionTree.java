@@ -10,19 +10,6 @@ public class QuestionTree {
       console = new Scanner(System.in); 
    }
    
-   public void read(Scanner input) {
-      while(input.hasNextLine()) {
-         rootOfTree = readHelper(input); 
-      }
-   }
-
-   private QuestionNode readHelper(Scanner input) {
-      String data = input.nextLine();
-      QuestionNode root = new QuestionNode(data);  
-  
-      return root; 
-   }
-   
    public void askQuestions() {
       rootOfTree = askQuestions(rootOfTree); 
    }
@@ -38,7 +25,6 @@ public class QuestionTree {
             String question = console.nextLine(); 
             current = new QuestionNode(question, answer, current); 
          }
-     
       } else {
          if (yesTo(current.data)) {
             current.yesNode = askQuestions(current.yesNode);
@@ -47,6 +33,10 @@ public class QuestionTree {
          }   
       } 
       return current;
+   }
+
+   private boolean isAnswerNode(QuestionNode node) {
+      return (node.yesNode == null || node.noNode == null);
    }
    
    public boolean yesTo(String prompt) {
@@ -61,7 +51,4 @@ public class QuestionTree {
       return (response.equals("sim") || response.equals("s") || response.equals("certo") || response.equals("y") || response.equals("yes")) ? true : false;
    }   
    
-   private boolean isAnswerNode(QuestionNode node) {
-      return (node.yesNode == null || node.noNode == null);
-   }
 }
