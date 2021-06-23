@@ -50,5 +50,4 @@ public class QuestionTree {
 
       return (response.equals("sim") || response.equals("s") || response.equals("certo") || response.equals("y") || response.equals("yes")) ? true : false;
    }   
-   
 }

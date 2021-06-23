@@ -4,8 +4,6 @@ public class QuestionNode {
    public QuestionNode yesNode;
    public QuestionNode noNode;
 
-   public QuestionNode() {}
-
    public QuestionNode(String data) {
       this(data,null, null); 
    }
